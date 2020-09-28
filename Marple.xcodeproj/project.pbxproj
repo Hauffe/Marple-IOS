@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F63252276FE003BA1CE /* AppDelegate.swift */; };
+		FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F65252276FE003BA1CE /* SceneDelegate.swift */; };
+		FADF8F68252276FE003BA1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F67252276FE003BA1CE /* ViewController.swift */; };
+		FADF8F6B252276FE003BA1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F69252276FE003BA1CE /* Main.storyboard */; };
+		FADF8F6E252276FE003BA1CE /* Marple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F6C252276FE003BA1CE /* Marple.xcdatamodeld */; };
+		FADF8F70252276FF003BA1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F6F252276FF003BA1CE /* Assets.xcassets */; };
+		FADF8F73252276FF003BA1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */; };
+		FADF8F7E252276FF003BA1CE /* MarpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F7D252276FF003BA1CE /* MarpleTests.swift */; };
+		FADF8F89252276FF003BA1CE /* MarpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F88252276FF003BA1CE /* MarpleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADF8F7A252276FF003BA1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADF8F58252276FE003BA1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADF8F5F252276FE003BA1CE;
+			remoteInfo = Marple;
+		};
+		FADF8F85252276FF003BA1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADF8F58252276FE003BA1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADF8F5F252276FE003BA1CE;
+			remoteInfo = Marple;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADF8F60252276FE003BA1CE /* Marple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADF8F63252276FE003BA1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FADF8F65252276FE003BA1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FADF8F67252276FE003BA1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FADF8F6A252276FE003BA1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADF8F6D252276FE003BA1CE /* Marple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marple.xcdatamodel; sourceTree = "<group>"; };
+		FADF8F6F252276FF003BA1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADF8F72252276FF003BA1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FADF8F74252276FF003BA1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADF8F79252276FF003BA1CE /* MarpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADF8F7D252276FF003BA1CE /* MarpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarpleTests.swift; sourceTree = "<group>"; };
+		FADF8F7F252276FF003BA1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADF8F84252276FF003BA1CE /* MarpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADF8F88252276FF003BA1CE /* MarpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarpleUITests.swift; sourceTree = "<group>"; };
+		FADF8F8A252276FF003BA1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADF8F5D252276FE003BA1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADF8F76252276FF003BA1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADF8F81252276FF003BA1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADF8F57252276FE003BA1CE = {
+			isa = PBXGroup;
+			children = (
+				FADF8F62252276FE003BA1CE /* Marple */,
+				FADF8F7C252276FF003BA1CE /* MarpleTests */,
+				FADF8F87252276FF003BA1CE /* MarpleUITests */,
+				FADF8F61252276FE003BA1CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADF8F61252276FE003BA1CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADF8F60252276FE003BA1CE /* Marple.app */,
+				FADF8F79252276FF003BA1CE /* MarpleTests.xctest */,
+				FADF8F84252276FF003BA1CE /* MarpleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADF8F62252276FE003BA1CE /* Marple */ = {
+			isa = PBXGroup;
+			children = (
+				FADF8F63252276FE003BA1CE /* AppDelegate.swift */,
+				FADF8F65252276FE003BA1CE /* SceneDelegate.swift */,
+				FADF8F67252276FE003BA1CE /* ViewController.swift */,
+				FADF8F69252276FE003BA1CE /* Main.storyboard */,
+				FADF8F6F252276FF003BA1CE /* Assets.xcassets */,
+				FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */,
+				FADF8F74252276FF003BA1CE /* Info.plist */,
+				FADF8F6C252276FE003BA1CE /* Marple.xcdatamodeld */,
+			);
+			path = Marple;
+			sourceTree = "<group>";
+		};
+		FADF8F7C252276FF003BA1CE /* MarpleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADF8F7D252276FF003BA1CE /* MarpleTests.swift */,
+				FADF8F7F252276FF003BA1CE /* Info.plist */,
+			);
+			path = MarpleTests;
+			sourceTree = "<group>";
+		};
+		FADF8F87252276FF003BA1CE /* MarpleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FADF8F88252276FF003BA1CE /* MarpleUITests.swift */,
+				FADF8F8A252276FF003BA1CE /* Info.plist */,
+			);
+			path = MarpleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADF8F5F252276FE003BA1CE /* Marple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADF8F8D252276FF003BA1CE /* Build configuration list for PBXNativeTarget "Marple" */;
+			buildPhases = (
+				FADF8F5C252276FE003BA1CE /* Sources */,
+				FADF8F5D252276FE003BA1CE /* Frameworks */,
+				FADF8F5E252276FE003BA1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marple;
+			productName = Marple;
+			productReference = FADF8F60252276FE003BA1CE /* Marple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADF8F78252276FF003BA1CE /* MarpleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADF8F90252276FF003BA1CE /* Build configuration list for PBXNativeTarget "MarpleTests" */;
+			buildPhases = (
+				FADF8F75252276FF003BA1CE /* Sources */,
+				FADF8F76252276FF003BA1CE /* Frameworks */,
+				FADF8F77252276FF003BA1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADF8F7B252276FF003BA1CE /* PBXTargetDependency */,
+			);
+			name = MarpleTests;
+			productName = MarpleTests;
+			productReference = FADF8F79252276FF003BA1CE /* MarpleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FADF8F83252276FF003BA1CE /* MarpleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADF8F93252276FF003BA1CE /* Build configuration list for PBXNativeTarget "MarpleUITests" */;
+			buildPhases = (
+				FADF8F80252276FF003BA1CE /* Sources */,
+				FADF8F81252276FF003BA1CE /* Frameworks */,
+				FADF8F82252276FF003BA1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADF8F86252276FF003BA1CE /* PBXTargetDependency */,
+			);
+			name = MarpleUITests;
+			productName = MarpleUITests;
+			productReference = FADF8F84252276FF003BA1CE /* MarpleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADF8F58252276FE003BA1CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FADF8F5F252276FE003BA1CE = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					FADF8F78252276FF003BA1CE = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FADF8F5F252276FE003BA1CE;
+					};
+					FADF8F83252276FF003BA1CE = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FADF8F5F252276FE003BA1CE;
+					};
+				};
+			};
+			buildConfigurationList = FADF8F5B252276FE003BA1CE /* Build configuration list for PBXProject "Marple" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADF8F57252276FE003BA1CE;
+			productRefGroup = FADF8F61252276FE003BA1CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADF8F5F252276FE003BA1CE /* Marple */,
+				FADF8F78252276FF003BA1CE /* MarpleTests */,
+				FADF8F83252276FF003BA1CE /* MarpleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADF8F5E252276FE003BA1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADF8F73252276FF003BA1CE /* LaunchScreen.storyboard in Resources */,
+				FADF8F70252276FF003BA1CE /* Assets.xcassets in Resources */,
+				FADF8F6B252276FE003BA1CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADF8F77252276FF003BA1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADF8F82252276FF003BA1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADF8F5C252276FE003BA1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADF8F6E252276FE003BA1CE /* Marple.xcdatamodeld in Sources */,
+				FADF8F68252276FE003BA1CE /* ViewController.swift in Sources */,
+				FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */,
+				FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADF8F75252276FF003BA1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADF8F7E252276FF003BA1CE /* MarpleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADF8F80252276FF003BA1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADF8F89252276FF003BA1CE /* MarpleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADF8F7B252276FF003BA1CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADF8F5F252276FE003BA1CE /* Marple */;
+			targetProxy = FADF8F7A252276FF003BA1CE /* PBXContainerItemProxy */;
+		};
+		FADF8F86252276FF003BA1CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADF8F5F252276FE003BA1CE /* Marple */;
+			targetProxy = FADF8F85252276FF003BA1CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADF8F69252276FE003BA1CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADF8F6A252276FE003BA1CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADF8F72252276FF003BA1CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADF8F8B252276FF003BA1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADF8F8C252276FF003BA1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADF8F8E252276FF003BA1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364ZG8V8HQ;
+				INFOPLIST_FILE = Marple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hauffealex.Marple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADF8F8F252276FF003BA1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364ZG8V8HQ;
+				INFOPLIST_FILE = Marple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hauffealex.Marple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FADF8F91252276FF003BA1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364ZG8V8HQ;
+				INFOPLIST_FILE = MarpleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hauffealex.MarpleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marple.app/Marple";
+			};
+			name = Debug;
+		};
+		FADF8F92252276FF003BA1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364ZG8V8HQ;
+				INFOPLIST_FILE = MarpleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hauffealex.MarpleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marple.app/Marple";
+			};
+			name = Release;
+		};
+		FADF8F94252276FF003BA1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364ZG8V8HQ;
+				INFOPLIST_FILE = MarpleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hauffealex.MarpleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marple;
+			};
+			name = Debug;
+		};
+		FADF8F95252276FF003BA1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364ZG8V8HQ;
+				INFOPLIST_FILE = MarpleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hauffealex.MarpleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marple;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADF8F5B252276FE003BA1CE /* Build configuration list for PBXProject "Marple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADF8F8B252276FF003BA1CE /* Debug */,
+				FADF8F8C252276FF003BA1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADF8F8D252276FF003BA1CE /* Build configuration list for PBXNativeTarget "Marple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADF8F8E252276FF003BA1CE /* Debug */,
+				FADF8F8F252276FF003BA1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADF8F90252276FF003BA1CE /* Build configuration list for PBXNativeTarget "MarpleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADF8F91252276FF003BA1CE /* Debug */,
+				FADF8F92252276FF003BA1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADF8F93252276FF003BA1CE /* Build configuration list for PBXNativeTarget "MarpleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADF8F94252276FF003BA1CE /* Debug */,
+				FADF8F95252276FF003BA1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FADF8F6C252276FE003BA1CE /* Marple.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FADF8F6D252276FE003BA1CE /* Marple.xcdatamodel */,
+			);
+			currentVersion = FADF8F6D252276FE003BA1CE /* Marple.xcdatamodel */;
+			path = Marple.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FADF8F58252276FE003BA1CE /* Project object */;
+}
