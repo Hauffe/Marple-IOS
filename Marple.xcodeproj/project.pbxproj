@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F63252276FE003BA1CE /* AppDelegate.swift */; };
 		FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F65252276FE003BA1CE /* SceneDelegate.swift */; };
-		FADF8F68252276FE003BA1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F67252276FE003BA1CE /* ViewController.swift */; };
 		FADF8F6B252276FE003BA1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F69252276FE003BA1CE /* Main.storyboard */; };
 		FADF8F6E252276FE003BA1CE /* Marple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F6C252276FE003BA1CE /* Marple.xcdatamodeld */; };
 		FADF8F70252276FF003BA1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F6F252276FF003BA1CE /* Assets.xcassets */; };
 		FADF8F73252276FF003BA1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */; };
 		FADF8F7E252276FF003BA1CE /* MarpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F7D252276FF003BA1CE /* MarpleTests.swift */; };
 		FADF8F89252276FF003BA1CE /* MarpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F88252276FF003BA1CE /* MarpleUITests.swift */; };
-		FADF8FD2252283A7003BA1CE /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FCC252283A7003BA1CE /* Ingredient+CoreDataClass.swift */; };
-		FADF8FD3252283A7003BA1CE /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FCD252283A7003BA1CE /* Ingredient+CoreDataProperties.swift */; };
-		FADF8FD4252283A7003BA1CE /* Restriction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FCE252283A7003BA1CE /* Restriction+CoreDataClass.swift */; };
-		FADF8FD5252283A7003BA1CE /* Restriction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FCF252283A7003BA1CE /* Restriction+CoreDataProperties.swift */; };
-		FADF8FD6252283A7003BA1CE /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FD0252283A7003BA1CE /* Product+CoreDataClass.swift */; };
-		FADF8FD7252283A7003BA1CE /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FD1252283A7003BA1CE /* Product+CoreDataProperties.swift */; };
+		FADF8FE525229085003BA1CE /* Restriction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FE125229085003BA1CE /* Restriction+CoreDataClass.swift */; };
+		FADF8FE625229085003BA1CE /* Restriction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FE225229085003BA1CE /* Restriction+CoreDataProperties.swift */; };
+		FADF8FE725229085003BA1CE /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FE325229085003BA1CE /* Product+CoreDataClass.swift */; };
+		FADF8FE825229085003BA1CE /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FE425229085003BA1CE /* Product+CoreDataProperties.swift */; };
+		FADF900C25229C58003BA1CE /* RestrictionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */; };
+		FADF90112522A89C003BA1CE /* RestrictionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		FADF8F60252276FE003BA1CE /* Marple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADF8F63252276FE003BA1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADF8F65252276FE003BA1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FADF8F67252276FE003BA1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FADF8F6A252276FE003BA1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADF8F6D252276FE003BA1CE /* Marple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marple.xcdatamodel; sourceTree = "<group>"; };
 		FADF8F6F252276FF003BA1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,12 +55,12 @@
 		FADF8F84252276FF003BA1CE /* MarpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADF8F88252276FF003BA1CE /* MarpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarpleUITests.swift; sourceTree = "<group>"; };
 		FADF8F8A252276FF003BA1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FADF8FCC252283A7003BA1CE /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FADF8FCD252283A7003BA1CE /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FADF8FCE252283A7003BA1CE /* Restriction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restriction+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FADF8FCF252283A7003BA1CE /* Restriction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restriction+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FADF8FD0252283A7003BA1CE /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FADF8FD1252283A7003BA1CE /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FADF8FE125229085003BA1CE /* Restriction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restriction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FADF8FE225229085003BA1CE /* Restriction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restriction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FADF8FE325229085003BA1CE /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FADF8FE425229085003BA1CE /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsTableViewController.swift; sourceTree = "<group>"; };
+		FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +113,8 @@
 			children = (
 				FADF8F9A25227AF7003BA1CE /* Controller */,
 				FADF8F9925227AEB003BA1CE /* Model */,
+				FADF8F65252276FE003BA1CE /* SceneDelegate.swift */,
+				FADF8F63252276FE003BA1CE /* AppDelegate.swift */,
 				FADF8F69252276FE003BA1CE /* Main.storyboard */,
 				FADF8F6F252276FF003BA1CE /* Assets.xcassets */,
 				FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */,
@@ -145,12 +145,10 @@
 		FADF8F9925227AEB003BA1CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FADF8FCC252283A7003BA1CE /* Ingredient+CoreDataClass.swift */,
-				FADF8FCD252283A7003BA1CE /* Ingredient+CoreDataProperties.swift */,
-				FADF8FCE252283A7003BA1CE /* Restriction+CoreDataClass.swift */,
-				FADF8FCF252283A7003BA1CE /* Restriction+CoreDataProperties.swift */,
-				FADF8FD0252283A7003BA1CE /* Product+CoreDataClass.swift */,
-				FADF8FD1252283A7003BA1CE /* Product+CoreDataProperties.swift */,
+				FADF8FE125229085003BA1CE /* Restriction+CoreDataClass.swift */,
+				FADF8FE225229085003BA1CE /* Restriction+CoreDataProperties.swift */,
+				FADF8FE325229085003BA1CE /* Product+CoreDataClass.swift */,
+				FADF8FE425229085003BA1CE /* Product+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,11 +156,18 @@
 		FADF8F9A25227AF7003BA1CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FADF8F65252276FE003BA1CE /* SceneDelegate.swift */,
-				FADF8F67252276FE003BA1CE /* ViewController.swift */,
-				FADF8F63252276FE003BA1CE /* AppDelegate.swift */,
+				FADF90152522A8A5003BA1CE /* Restrictions */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FADF90152522A8A5003BA1CE /* Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */,
+				FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */,
+			);
+			path = Restrictions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,15 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADF8FD7252283A7003BA1CE /* Product+CoreDataProperties.swift in Sources */,
-				FADF8FD5252283A7003BA1CE /* Restriction+CoreDataProperties.swift in Sources */,
-				FADF8FD3252283A7003BA1CE /* Ingredient+CoreDataProperties.swift in Sources */,
-				FADF8FD4252283A7003BA1CE /* Restriction+CoreDataClass.swift in Sources */,
+				FADF90112522A89C003BA1CE /* RestrictionsViewController.swift in Sources */,
+				FADF900C25229C58003BA1CE /* RestrictionsTableViewController.swift in Sources */,
 				FADF8F6E252276FE003BA1CE /* Marple.xcdatamodeld in Sources */,
-				FADF8F68252276FE003BA1CE /* ViewController.swift in Sources */,
-				FADF8FD6252283A7003BA1CE /* Product+CoreDataClass.swift in Sources */,
 				FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */,
-				FADF8FD2252283A7003BA1CE /* Ingredient+CoreDataClass.swift in Sources */,
+				FADF8FE725229085003BA1CE /* Product+CoreDataClass.swift in Sources */,
+				FADF8FE525229085003BA1CE /* Restriction+CoreDataClass.swift in Sources */,
+				FADF8FE625229085003BA1CE /* Restriction+CoreDataProperties.swift in Sources */,
+				FADF8FE825229085003BA1CE /* Product+CoreDataProperties.swift in Sources */,
 				FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

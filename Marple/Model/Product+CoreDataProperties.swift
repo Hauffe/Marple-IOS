@@ -18,7 +18,7 @@ extension Product {
 
     @NSManaged public var name: String?
     @NSManaged public var desc: String?
-    @NSManaged public var hasIngredient: Ingredient?
+    @NSManaged public var ingredients: String?
 
 }
 

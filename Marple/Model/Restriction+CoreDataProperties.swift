@@ -18,7 +18,7 @@ extension Restriction {
 
     @NSManaged public var name: String?
     @NSManaged public var available: Bool
-    @NSManaged public var hasIngredient: Ingredient?
+    @NSManaged public var ingredients: String?
 
 }
 
