@@ -1,15 +1,15 @@
 //
-//  RestrictionsTableViewController.swift
+//  ProductTableViewController.swift
 //  Marple
 //
-//  Created by Alex on 28/09/20.
+//  Created by Alex on 29/09/20.
 //
 
 import UIKit
 
-class RestrictionsTableViewController: UITableViewController {
+class ProductTableViewController: UITableViewController {
     
-    var restrictionsList:[Restriction]?
+    var productsList:[Product]?
     
     private let reuseIdentifier = "cell"
     let context = (UIApplication.shared.delegate as!
@@ -17,8 +17,6 @@ class RestrictionsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
-
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,7 +27,7 @@ class RestrictionsTableViewController: UITableViewController {
     
     func fetchData() -> Void {
         do{
-            self.restrictionsList = try context.fetch(Restriction.fetchRequest())
+            self.productsList = try context.fetch(Product.fetchRequest())
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -38,12 +36,12 @@ class RestrictionsTableViewController: UITableViewController {
             print(error)
         }
     }
+
+    // MARK: - Table view data source
     
     override func viewDidAppear(_ animated: Bool) {
         fetchData()
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -52,17 +50,16 @@ class RestrictionsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return restrictionsList?.count ?? 0
+        return productsList?.count ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        let restriction = self.restrictionsList?[indexPath.row]
-        if let c = cell as? RestrictionsTableViewCell{
-            c.label.text = restriction?.name
-            c.ingredients.text = restriction?.ingredients
+        let restriction = self.productsList?[indexPath.row]
+        if let c = cell as? ProductViewCell{
+            c.nameLabel.text = restriction?.name
+            c.descLabel.text = restriction?.desc
         }
 
         return cell
@@ -81,9 +78,9 @@ class RestrictionsTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let restrictionDeleted = self.restrictionsList![indexPath.row]
-            restrictionsList?.remove(at: indexPath.row)
-            self.context.delete(restrictionDeleted)
+            let productDeleted = self.productsList![indexPath.row]
+            productsList?.remove(at: indexPath.row)
+            self.context.delete(productDeleted)
             do{
                 try self.context.save()
             }catch{print("error")}
@@ -92,14 +89,13 @@ class RestrictionsTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
 
-    
+    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        fetchData()
+
     }
-    
+    */
 
     /*
     // Override to support conditional rearranging of the table view.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1A96BA2523EE12005587E9 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96B92523EE12005587E9 /* ProductViewController.swift */; };
 		FAA14D1B2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA14D1A2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift */; };
 		FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F63252276FE003BA1CE /* AppDelegate.swift */; };
 		FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F65252276FE003BA1CE /* SceneDelegate.swift */; };
@@ -22,6 +23,8 @@
 		FADF8FE825229085003BA1CE /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8FE425229085003BA1CE /* Product+CoreDataProperties.swift */; };
 		FADF900C25229C58003BA1CE /* RestrictionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */; };
 		FADF90112522A89C003BA1CE /* RestrictionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */; };
+		FAFFAC572523EACA003B2416 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAC562523EACA003B2416 /* ProductViewCell.swift */; };
+		FAFFAC5C2523EAF0003B2416 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAC5B2523EAF0003B2416 /* ProductTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1A96B92523EE12005587E9 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FAA14D1A2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsTableViewCell.swift; sourceTree = "<group>"; };
 		FADF8F60252276FE003BA1CE /* Marple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADF8F63252276FE003BA1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		FADF8FE425229085003BA1CE /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsTableViewController.swift; sourceTree = "<group>"; };
 		FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsViewController.swift; sourceTree = "<group>"; };
+		FAFFAC562523EACA003B2416 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		FAFFAC5B2523EAF0003B2416 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,9 @@
 				FADF8F9925227AEB003BA1CE /* Model */,
 				FADF8F65252276FE003BA1CE /* SceneDelegate.swift */,
 				FADF8F63252276FE003BA1CE /* AppDelegate.swift */,
+				FAFFAC562523EACA003B2416 /* ProductViewCell.swift */,
+				FAFFAC5B2523EAF0003B2416 /* ProductTableViewController.swift */,
+				FA1A96B92523EE12005587E9 /* ProductViewController.swift */,
 				FADF8F69252276FE003BA1CE /* Main.storyboard */,
 				FADF8F6F252276FF003BA1CE /* Assets.xcassets */,
 				FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */,
@@ -303,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1A96BA2523EE12005587E9 /* ProductViewController.swift in Sources */,
 				FADF90112522A89C003BA1CE /* RestrictionsViewController.swift in Sources */,
 				FADF900C25229C58003BA1CE /* RestrictionsTableViewController.swift in Sources */,
 				FADF8F6E252276FE003BA1CE /* Marple.xcdatamodeld in Sources */,
@@ -313,6 +323,8 @@
 				FADF8FE625229085003BA1CE /* Restriction+CoreDataProperties.swift in Sources */,
 				FADF8FE825229085003BA1CE /* Product+CoreDataProperties.swift in Sources */,
 				FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */,
+				FAFFAC5C2523EAF0003B2416 /* ProductTableViewController.swift in Sources */,
+				FAFFAC572523EACA003B2416 /* ProductViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
