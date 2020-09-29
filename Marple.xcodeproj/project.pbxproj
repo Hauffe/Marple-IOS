@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAA14D1B2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA14D1A2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift */; };
 		FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F63252276FE003BA1CE /* AppDelegate.swift */; };
 		FADF8F66252276FE003BA1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8F65252276FE003BA1CE /* SceneDelegate.swift */; };
 		FADF8F6B252276FE003BA1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF8F69252276FE003BA1CE /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAA14D1A2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsTableViewCell.swift; sourceTree = "<group>"; };
 		FADF8F60252276FE003BA1CE /* Marple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADF8F63252276FE003BA1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADF8F65252276FE003BA1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAA14D162522B36900B1D1A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		FAAEB9652522AFA400BC9070 /* Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */,
+				FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */,
+				FAA14D1A2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift */,
+			);
+			path = Restrictions;
+			sourceTree = "<group>";
+		};
 		FADF8F57252276FE003BA1CE = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +130,8 @@
 		FADF8F62252276FE003BA1CE /* Marple */ = {
 			isa = PBXGroup;
 			children = (
-				FADF8F9A25227AF7003BA1CE /* Controller */,
+				FAA14D162522B36900B1D1A5 /* Products */,
+				FAAEB9652522AFA400BC9070 /* Restrictions */,
 				FADF8F9925227AEB003BA1CE /* Model */,
 				FADF8F65252276FE003BA1CE /* SceneDelegate.swift */,
 				FADF8F63252276FE003BA1CE /* AppDelegate.swift */,
@@ -151,23 +171,6 @@
 				FADF8FE425229085003BA1CE /* Product+CoreDataProperties.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		FADF8F9A25227AF7003BA1CE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FADF90152522A8A5003BA1CE /* Restrictions */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FADF90152522A8A5003BA1CE /* Restrictions */ = {
-			isa = PBXGroup;
-			children = (
-				FADF900B25229C58003BA1CE /* RestrictionsTableViewController.swift */,
-				FADF90102522A89C003BA1CE /* RestrictionsViewController.swift */,
-			);
-			path = Restrictions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +307,7 @@
 				FADF900C25229C58003BA1CE /* RestrictionsTableViewController.swift in Sources */,
 				FADF8F6E252276FE003BA1CE /* Marple.xcdatamodeld in Sources */,
 				FADF8F64252276FE003BA1CE /* AppDelegate.swift in Sources */,
+				FAA14D1B2522BCA100B1D1A5 /* RestrictionsTableViewCell.swift in Sources */,
 				FADF8FE725229085003BA1CE /* Product+CoreDataClass.swift in Sources */,
 				FADF8FE525229085003BA1CE /* Restriction+CoreDataClass.swift in Sources */,
 				FADF8FE625229085003BA1CE /* Restriction+CoreDataProperties.swift in Sources */,

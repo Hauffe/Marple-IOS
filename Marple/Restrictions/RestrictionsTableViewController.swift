@@ -11,11 +11,15 @@ class RestrictionsTableViewController: UITableViewController {
     
     var restrictionsList:[Restriction]?
     
+    private let reuseIdentifier = "cell"
     let context = (UIApplication.shared.delegate as!
                     AppDelegate).persistentContainer.viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
         fetchData()
 
@@ -29,6 +33,10 @@ class RestrictionsTableViewController: UITableViewController {
     func fetchData() -> Void {
         do{
             self.restrictionsList = try context.fetch(Restriction.fetchRequest())
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
         }catch{
             
         }
@@ -48,10 +56,13 @@ class RestrictionsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let restriction = self.restrictionsList?[indexPath.row]
         
-        cell.textLabel?.text = restriction?.name
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        let restriction = self.restrictionsList?[indexPath.row]
+        if let c = cell as? RestrictionsTableViewCell{
+            c.label.text = restriction?.name
+            c.ingredients.text = restriction?.ingredients
+        }
 
         return cell
     }

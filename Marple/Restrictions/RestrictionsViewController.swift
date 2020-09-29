@@ -9,13 +9,33 @@ import UIKit
 
 class RestrictionsViewController: UIViewController {
 
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var ingredientsText: UITextView!
+    
+    let context = (UIApplication.shared.delegate as!
+                    AppDelegate).persistentContainer.viewContext
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func saveBtnClick(_ sender: Any) {
+        do{
+            let newRestriction = Restriction(context: self.context)
+            newRestriction.name = nameText.text
+            newRestriction.ingredients = ingredientsText.text
+            newRestriction.available = true
+        
+        try self.context.save()
+        }catch{
+            print("Error at savng the restriction")
+        }
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
