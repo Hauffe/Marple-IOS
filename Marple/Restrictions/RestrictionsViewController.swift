@@ -12,13 +12,16 @@ class RestrictionsViewController: UIViewController {
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var ingredientsText: UITextView!
     
+    let alert = UIAlertController(title: "Success", message: "Restrictions Saved, please return or stay to add one more.", preferredStyle: .alert) 
     let context = (UIApplication.shared.delegate as!
                     AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+        NSLog("The \"OK\" alert occured.")
+        }))
     }
     
     @IBAction func saveBtnClick(_ sender: Any) {
@@ -27,7 +30,7 @@ class RestrictionsViewController: UIViewController {
             newRestriction.name = nameText.text
             newRestriction.ingredients = ingredientsText.text
             newRestriction.available = true
-        
+            self.present(alert, animated: true, completion: nil)
         try self.context.save()
         }catch{
             print("Error at savng the restriction")

@@ -17,11 +17,8 @@ class RestrictionsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        
         fetchData()
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,6 +37,10 @@ class RestrictionsTableViewController: UITableViewController {
         }catch{
             
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        fetchData()
     }
 
     // MARK: - Table view data source
@@ -76,7 +77,7 @@ class RestrictionsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -86,14 +87,14 @@ class RestrictionsTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        fetchData()
     }
-    */
+    
 
     /*
     // Override to support conditional rearranging of the table view.
