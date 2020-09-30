@@ -99,6 +99,9 @@
 		FAA14D162522B36900B1D1A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFAC562523EACA003B2416 /* ProductViewCell.swift */,
+				FAFFAC5B2523EAF0003B2416 /* ProductTableViewController.swift */,
+				FA1A96B92523EE12005587E9 /* ProductViewController.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -141,9 +144,6 @@
 				FADF8F9925227AEB003BA1CE /* Model */,
 				FADF8F65252276FE003BA1CE /* SceneDelegate.swift */,
 				FADF8F63252276FE003BA1CE /* AppDelegate.swift */,
-				FAFFAC562523EACA003B2416 /* ProductViewCell.swift */,
-				FAFFAC5B2523EAF0003B2416 /* ProductTableViewController.swift */,
-				FA1A96B92523EE12005587E9 /* ProductViewController.swift */,
 				FADF8F69252276FE003BA1CE /* Main.storyboard */,
 				FADF8F6F252276FF003BA1CE /* Assets.xcassets */,
 				FADF8F71252276FF003BA1CE /* LaunchScreen.storyboard */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RestrictionsTableViewController: UITableViewController {
+class RestrictionsTableViewController: UITableViewController{
     
     var restrictionsList:[Restriction]?
     
@@ -42,6 +42,7 @@ class RestrictionsTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         fetchData()
     }
+    
 
     // MARK: - Table view data source
 
@@ -61,12 +62,16 @@ class RestrictionsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         let restriction = self.restrictionsList?[indexPath.row]
         if let c = cell as? RestrictionsTableViewCell{
+            c.delegate = self
+            c.setRestriction(restrictionNew: restriction!)
             c.label.text = restriction?.name
             c.ingredients.text = restriction?.ingredients
+            c.isActiveSwitch.setOn(restriction?.available ?? false, animated: true)
         }
 
         return cell
     }
+
     
 
     /*
@@ -119,4 +124,15 @@ class RestrictionsTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension RestrictionsTableViewController: RestrictionCellDelegate{
+    func switchChangedValue(restriction: Restriction, value: Bool) {
+        restriction.available = value
+        do{
+            try self.context.save()
+        }catch{
+            print(error)
+        }
+    }
 }

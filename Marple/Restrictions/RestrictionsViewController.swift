@@ -33,7 +33,7 @@ class RestrictionsViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         try self.context.save()
         }catch{
-            print("Error at savng the restriction")
+            print("Error at saving the restriction \(error)")
         }
     }
     

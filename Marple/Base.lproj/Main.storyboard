@@ -228,6 +228,9 @@
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-aG-j9O">
                                             <rect key="frame" x="345" y="35" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="switchChanged:" destination="v3A-xe-xh6" eventType="valueChanged" id="pSk-iv-abn"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                     <constraints>
@@ -245,6 +248,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ingredients" destination="2y4-kZ-kLS" id="Ffo-Rm-Kbd"/>
+                                    <outlet property="isActiveSwitch" destination="NfF-aG-j9O" id="Hsc-sd-P08"/>
                                     <outlet property="label" destination="YJd-zO-Bbb" id="kfU-LS-cBd"/>
                                 </connections>
                             </tableViewCell>
