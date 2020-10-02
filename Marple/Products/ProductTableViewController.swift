@@ -10,6 +10,7 @@ import UIKit
 class ProductTableViewController: UITableViewController {
     
     var productsList:[Product]?
+    var restrictionsList:[Restriction]?
     
     private let reuseIdentifier = "cell"
     let context = (UIApplication.shared.delegate as!
@@ -28,6 +29,7 @@ class ProductTableViewController: UITableViewController {
     func fetchData() -> Void {
         do{
             self.productsList = try context.fetch(Product.fetchRequest())
+            self.restrictionsList = try context.fetch(Restriction.fetchRequest())
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -56,13 +58,39 @@ class ProductTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        let restriction = self.productsList?[indexPath.row]
+        let product = self.productsList?[indexPath.row]
         if let c = cell as? ProductViewCell{
-            c.nameLabel.text = restriction?.name
-            c.descLabel.text = restriction?.desc
+            c.nameLabel.text = product?.name
+            c.descLabel.text = product?.desc
+            c.backgroundColor = checkProduct(product: product!) ? .green : .red
         }
 
         return cell
+    }
+    
+    func checkProduct(product: Product) -> Bool{
+        var appendedIngredients = ""
+        var flag = true
+        if (restrictionsList?.isEmpty == false)
+        {
+            restrictionsList?.forEach{restrictionValue in
+                if(restrictionValue.available == true){
+                    appendedIngredients.append(restrictionValue.ingredients ?? "")
+                }
+            }
+        }
+        let restrictionIngredients = appendedIngredients.components(separatedBy: ", ")
+        let prodIngredients = product.ingredients?.components(separatedBy: ", ")
+        
+        for restrict in restrictionIngredients {
+            if (prodIngredients?.contains(restrict) == true){
+                flag = false
+                break
+            }else{
+                flag = true
+            }
+        }
+        return flag
     }
     
 
