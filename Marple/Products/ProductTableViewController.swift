@@ -62,6 +62,7 @@ class ProductTableViewController: UITableViewController {
         if let c = cell as? ProductViewCell{
             c.nameLabel.text = product?.name
             c.descLabel.text = product?.desc
+            c.ingredientLabel.text = product?.ingredients
             c.backgroundColor = checkProduct(product: product!) ? .green : .red
         }
 
@@ -71,11 +72,16 @@ class ProductTableViewController: UITableViewController {
     func checkProduct(product: Product) -> Bool{
         var appendedIngredients = ""
         var flag = true
+        var restrictionCount = restrictionsList?.count ?? 0
         if (restrictionsList?.isEmpty == false)
         {
             restrictionsList?.forEach{restrictionValue in
+                restrictionCount-=1
                 if(restrictionValue.available == true){
                     appendedIngredients.append(restrictionValue.ingredients ?? "")
+                    if(restrictionCount > 0){
+                        appendedIngredients.append(", ")
+                    }
                 }
             }
         }

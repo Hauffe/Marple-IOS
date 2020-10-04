@@ -35,41 +35,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="92" id="kWV-jH-hcp" userLabel="cell" customClass="ProductViewCell" customModule="Marple" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="92"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="114" id="kWV-jH-hcp" userLabel="cell" customClass="ProductViewCell" customModule="Marple" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kWV-jH-hcp" id="oZp-yH-8jD">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3E-TD-2XK">
                                             <rect key="frame" x="20" y="11" width="374" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="t1c-qf-AP7"/>
-                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingredientLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnq-DR-7yp" userLabel="Ingredient Label">
+                                            <rect key="frame" x="20" y="82" width="374" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvb-TF-JgG">
-                                            <rect key="frame" x="20" y="40" width="374" height="41"/>
+                                            <rect key="frame" x="20" y="47" width="374" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="top" secondItem="J3E-TD-2XK" secondAttribute="bottom" constant="8" symbolic="YES" id="0eq-Ma-ydG"/>
-                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="trailing" secondItem="oZp-yH-8jD" secondAttribute="trailingMargin" id="Tdu-7I-HYj"/>
-                                        <constraint firstItem="J3E-TD-2XK" firstAttribute="top" secondItem="oZp-yH-8jD" secondAttribute="topMargin" id="WQs-C5-t6Q"/>
-                                        <constraint firstItem="J3E-TD-2XK" firstAttribute="leading" secondItem="oZp-yH-8jD" secondAttribute="leadingMargin" id="aT1-2p-NTp"/>
-                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="bottom" secondItem="oZp-yH-8jD" secondAttribute="bottomMargin" id="lpE-PD-lL6"/>
-                                        <constraint firstItem="J3E-TD-2XK" firstAttribute="trailing" secondItem="oZp-yH-8jD" secondAttribute="trailingMargin" id="nAV-dH-Kc1"/>
-                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="leading" secondItem="oZp-yH-8jD" secondAttribute="leadingMargin" id="w0m-x3-s3d"/>
+                                        <constraint firstItem="Gnq-DR-7yp" firstAttribute="top" secondItem="tvb-TF-JgG" secondAttribute="bottom" constant="14.5" id="4gX-Y8-sBF"/>
+                                        <constraint firstItem="J3E-TD-2XK" firstAttribute="leading" secondItem="oZp-yH-8jD" secondAttribute="leadingMargin" id="65z-MN-oh5"/>
+                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="leading" secondItem="oZp-yH-8jD" secondAttribute="leadingMargin" id="RgX-K8-HpU"/>
+                                        <constraint firstItem="Gnq-DR-7yp" firstAttribute="top" secondItem="tvb-TF-JgG" secondAttribute="bottom" constant="14.5" id="THD-7m-FB2"/>
+                                        <constraint firstItem="Gnq-DR-7yp" firstAttribute="bottom" secondItem="oZp-yH-8jD" secondAttribute="bottomMargin" id="WeS-NA-3ZE"/>
+                                        <constraint firstItem="Gnq-DR-7yp" firstAttribute="leading" secondItem="oZp-yH-8jD" secondAttribute="leadingMargin" id="doQ-On-me4"/>
+                                        <constraint firstItem="J3E-TD-2XK" firstAttribute="trailing" secondItem="oZp-yH-8jD" secondAttribute="trailingMargin" id="nKT-wD-fQM"/>
+                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="top" secondItem="J3E-TD-2XK" secondAttribute="bottom" constant="15" id="nOt-5z-SLY"/>
+                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="top" secondItem="J3E-TD-2XK" secondAttribute="bottom" constant="15" id="teJ-eF-YmP"/>
+                                        <constraint firstItem="tvb-TF-JgG" firstAttribute="trailing" secondItem="oZp-yH-8jD" secondAttribute="trailingMargin" id="vJ8-TR-Mah"/>
+                                        <constraint firstItem="Gnq-DR-7yp" firstAttribute="trailing" secondItem="oZp-yH-8jD" secondAttribute="trailingMargin" id="yEb-yE-bXC"/>
+                                        <constraint firstItem="J3E-TD-2XK" firstAttribute="top" secondItem="oZp-yH-8jD" secondAttribute="topMargin" id="yhX-8l-hLm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descLabel" destination="tvb-TF-JgG" id="ZDm-CA-cH0"/>
+                                    <outlet property="ingredientLabel" destination="Gnq-DR-7yp" id="yGs-OW-FHd"/>
                                     <outlet property="nameLabel" destination="J3E-TD-2XK" id="FeH-wa-XaQ"/>
                                 </connections>
                             </tableViewCell>
